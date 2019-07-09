@@ -124,6 +124,12 @@
                   )
               });
         }
+    },
+        mounted(){
+          this.getTweets();
+    setInterval(function () {
+      this.getTweets();
+    }.bind(this),3000); 
     }
   }
 </script>
